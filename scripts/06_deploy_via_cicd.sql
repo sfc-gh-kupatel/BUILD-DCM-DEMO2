@@ -1,9 +1,3 @@
-/*-----------------------------------------------------------------------------
-BUILD 2023:   Database Change Management
-Script:       06_deploy_via_cicd.sql
-Author:       Jeremiah Hansen
-Last Updated: 11/6/2023
------------------------------------------------------------------------------*/
 
 USE ROLE DEMO_ROLE;
 USE WAREHOUSE DEMO_WH;
