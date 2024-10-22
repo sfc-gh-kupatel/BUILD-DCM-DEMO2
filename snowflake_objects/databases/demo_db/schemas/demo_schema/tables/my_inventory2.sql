@@ -1,0 +1,8 @@
+SET (min, max)=(40, 70);
+CREATE OR ALTER TABLE MY_INVENTORY
+(
+   SKU VARCHAR
+  ,PRICE NUMBER
+);
+
+SELECT $min;
