@@ -10,5 +10,15 @@
 
 SET FHLB_ENV = 'DEV';
 
-SET ENV_TABLE_NAME = 'UTIL_' || $FHLB_ENV || '_TABLE';
+-----------------------------------------------------
+-----             Verify correct env            -----
+-----------------------------------------------------
+
+-- Determine environment and set username
+-- Replace FHLB_ENV with a public function to determine account/env at a later time
+USE DATABASE FHLB_UTILITY;
+USE SCHEMA FHLBUTL;
+
+SET ENV_TABLE_NAME = 'FHLBP_' || $FHLB_ENV || '_TABLE';
 SELECT COUNT(*) FROM IDENTIFIER($ENV_TABLE_NAME);
+
