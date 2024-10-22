@@ -29,7 +29,7 @@ SET ENV_TABLE_NAME = 'FHLBP_' || $FHLB_ENV || '_TABLE';
 -----   This section should only be modified    -----
 -----      if a NEW network rule is needed      -----
 -----------------------------------------------------
-USE ROLE SF_NETWORKADMIN;
+USE ROLE SF_NETWORK_ADMIN;
 USE DATABASE FHLB_UTILITY;
 USE SCHEMA NETWORK;
 
@@ -50,7 +50,7 @@ CREATE NETWORK RULE IF NOT EXISTS NETRULE_TABLEAU_CLOUD_EXT
 -----   This section should only be modified    -----
 -----     if a NEW network policy is needed     -----
 -----------------------------------------------------
-USE ROLE SF_NETWORKADMIN;
+USE ROLE SF_NETWORK_ADMIN;
 USE DATABASE FHLB_UTILITY;
 USE SCHEMA NETWORK;
 
@@ -62,7 +62,7 @@ CREATE NETWORK POLICY IF NOT EXISTS NETPOL_TABLEAU_CLOUD;
 -----                                           -----
 -----  IP list for each network rule goes here  -----
 -----------------------------------------------------
-USE ROLE SF_NETWORKADMIN;
+USE ROLE SF_NETWORK_ADMIN;
 USE DATABASE FHLB_UTILITY;
 USE SCHEMA NETWORK;
 
@@ -78,7 +78,7 @@ ALTER NETWORK RULE NETRULE_TABLEAU_CLOUD_EXT SET
 -----                                           -----
 -----  Rules for each network policy goes here  -----
 -----------------------------------------------------
-USE ROLE SF_NETWORKADMIN;
+USE ROLE SF_NETWORK_ADMIN;
 USE DATABASE FHLB_UTILITY;
 USE SCHEMA NETWORK;
 
