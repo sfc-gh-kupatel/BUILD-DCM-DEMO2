@@ -21,6 +21,7 @@ USE SCHEMA FHLBUTL;
 
 SET ENV_TABLE_NAME = 'FHLBP_' || $FHLB_ENV || '_TABLE';
 SELECT COUNT(*) FROM IDENTIFIER($ENV_TABLE_NAME);
+--test
 
 
 -----------------------------------------------------
